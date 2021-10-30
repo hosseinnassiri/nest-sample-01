@@ -1,7 +1,7 @@
 ## Description
 sample data for mongo:
 ``` json
-{"name":"az 300","topics":["azure","azure-fundamentals"],"_id":{"$oid":"617c9b2da0e8d826a14e02fb"}}
+{"name":"az 300","topics":["azure","azure-fundamentals"]}
 ```
 ## Installation
 
