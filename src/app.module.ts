@@ -4,9 +4,11 @@ import { AppService } from './app.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ReferenceModule } from './references/reference.module';
 
+const mongoConnection = process.env.MONGODB_URI || 'mongodb://localhost:27017/sample01';
+
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/sample01'),
+    MongooseModule.forRoot(mongoConnection),
     ReferenceModule,
   ],
   controllers: [AppController],

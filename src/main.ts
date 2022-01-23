@@ -10,7 +10,6 @@ async function bootstrap() {
   //const loggerService = app.get(Logger);
   const logger = new Logger();
 
-
   // SWAGGER
   const optionsSwagger = new DocumentBuilder()
     .setTitle('NestJS Typescript Boilerplate')

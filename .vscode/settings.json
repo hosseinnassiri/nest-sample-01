@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/a95df0af-4791-4677-93bc-228ce088d09e/resourceGroups/hossein-dev-common/providers/Microsoft.Web/sites/refwiki-dev-01",
+    "appService.deploySubpath": "."
+}
