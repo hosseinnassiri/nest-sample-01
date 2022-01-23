@@ -8,18 +8,22 @@ async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
   //const loggerService = app.get(Logger);
+  const logger = new Logger();
+
 
   // SWAGGER
   const optionsSwagger = new DocumentBuilder()
     .setTitle('NestJS Typescript Boilerplate')
     .setDescription('The NestJS API description')
     .setVersion('1.0')
-    .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, optionsSwagger);
-  SwaggerModule.setup('docs', app, document);
+  SwaggerModule.setup('swagger', app, document);
 
-  await app.listen(3000);
+  const port = process.env.PORT || 3000;
+
+  await app.listen(port);
+  logger.log(`App running on port ${port}`)
 }
 
 bootstrap();
