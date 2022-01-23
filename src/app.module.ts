@@ -6,7 +6,7 @@ import { ReferenceModule } from './references/reference.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/sample01'),
+    MongooseModule.forRoot('mongodb://localhost:27017/wikiref'),
     ReferenceModule,
   ],
   controllers: [AppController],
