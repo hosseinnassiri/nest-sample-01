@@ -60,7 +60,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: "refwiki-dev-01"
+          app-name: "refwiki-webapp-dev-01"
           slot-name: "Production"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D7A644F1B7EF40029C71FEDE2A6DEE47 }}
           package: .
