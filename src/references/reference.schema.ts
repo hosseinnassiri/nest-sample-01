@@ -1,15 +1,15 @@
-import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document } from 'mongoose';
+// import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+// import { Document } from 'mongoose';
 
-export type ReferenceDocument = Reference & Document;
+// export type ReferenceDocument = Reference & Document;
 
-@Schema()
-export class Reference {
-  @Prop()
-  name: string;
+// @Schema()
+// export class Reference {
+//   @Prop()
+//   name: string;
 
-  @Prop([String])
-  topics: string[];
-}
+//   @Prop([String])
+//   topics: string[];
+// }
 
-export const ReferenceSchema = SchemaFactory.createForClass(Reference);
+// export const ReferenceSchema = SchemaFactory.createForClass(Reference);
